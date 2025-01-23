@@ -1,4 +1,4 @@
-// src/restaurants/restaurants.controller.ts
+
 import {
   Controller,
   Get,
@@ -26,7 +26,6 @@ export class RestaurantsController {
 
   @Get()
   findAll(): Promise<Restaurant[]> {
-    // eslint-disable-next-line @typescript-eslint/no-unsafe-return
     return this.restaurantsService.findAll();
   }
 
